@@ -61,9 +61,9 @@ params:
     provider: disqus
 
     disqusjs:
-      shortname:
+      shortname: radublog
       apiUrl:
-      apiKey:
+      apiKey: h5s1R9WYtPYLGySDBPvPq4kl4avFgsw3wQUnJE9hABeuvXSvA81Nxm4Z8CdvRb6Z
       admin:
       adminLabel:
 
