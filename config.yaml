@@ -1,4 +1,4 @@
-baseurl: https://example.com
+baseurl: https://blog.venovedo.ro
 languageCode: en-us
 theme: hugo-theme-stack
 paginate: 5
@@ -25,8 +25,9 @@ DefaultContentLanguage: en
 hasCJKLanguage: false
 
 permalinks:
-  post: /post/:slug/
-  page: /page/:slug/
+  post: /:slug/
+  page: /p/:slug/
+  categories: /c/:slug/
 
 params:
   mainSections:
@@ -57,15 +58,7 @@ params:
       default: Licensed under CC BY-NC-SA 4.0
 
   comments:
-    enabled: true
-    provider: disqus
-
-    disqusjs:
-      shortname: radublog
-      apiUrl:
-      apiKey: h5s1R9WYtPYLGySDBPvPq4kl4avFgsw3wQUnJE9hABeuvXSvA81Nxm4Z8CdvRb6Z
-      admin:
-      adminLabel:
+    enabled: false
 
     utterances:
       repo:
@@ -108,9 +101,9 @@ params:
 
     # See https://cactus.chat/docs/reference/web-client/#configuration for description of the various options
     cactus:
-      defaultHomeserverUrl: 'https://matrix.cactus.chat:8448'
-      serverName: 'cactus.chat'
-      siteName: '' # You must insert a unique identifier here matching the one you registered (See https://cactus.chat/docs/getting-started/quick-start/#register-your-site)
+      defaultHomeserverUrl: "https://matrix.cactus.chat:8448"
+      serverName: "cactus.chat"
+      siteName: "" # You must insert a unique identifier here matching the one you registered (See https://cactus.chat/docs/getting-started/quick-start/#register-your-site)
 
     giscus:
       repo:
