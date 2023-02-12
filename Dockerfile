@@ -13,5 +13,6 @@ RUN hugo
 
 FROM nginx AS server
 COPY --from=build /opt/public /usr/share/nginx/html
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 80
