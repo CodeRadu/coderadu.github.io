@@ -4,13 +4,10 @@ FROM ubuntu AS build
 RUN apt update
 
 # Install HUGO
-RUN apt install hugo git -y
+RUN apt install hugo -y
 
 WORKDIR /opt
 COPY . .
-
-# Checkout git submodule
-RUN git submodule update --init --recursive
 
 RUN hugo -v
 
